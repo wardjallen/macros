@@ -10,7 +10,7 @@ async function checkMacro() {
     try {
         //const res = await xapi.Command.HttpClient.Get({ url, Header, AllowInsecureHTTPS: true });
         const res = await xapi.Command.HttpClient.Get({ url: macroInstallURL });
-        console.log(res.body)
+        console.log(res.Body)
     }
     catch(e) {
         console.log('error', e)
